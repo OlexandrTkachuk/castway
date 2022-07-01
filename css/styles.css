@@ -1,0 +1,433 @@
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: rgba(255, 255, 255, 0.7);
+  --accent-color: #118da8;
+  --button-bg-color: #118da8;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+
+  color: var(--primary-color);
+  background-color: #191919;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 1300px;
+  margin: 0 auto;
+}
+
+/* page-nav */
+.page-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-nav .logo .link {
+  display: inline-block;
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+
+.main-nav-list {
+  display: flex;
+}
+
+.main-nav-list .item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.main-nav-list .link {
+  font-size: 17px;
+  line-height: 1.59;
+}
+
+.main-nav-list .link:hover {
+  color: var(--accent-color);
+}
+
+.current {
+  color: var(--accent-color);
+}
+
+/* hero */
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-img img {
+  border-radius: 14px;
+  margin-top: 40px;
+}
+
+.hero-attention .title {
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 1.26;
+  letter-spacing: 3.2px;
+
+  color: var(--primary-color);
+
+  width: 526px;
+  margin-top: 334px;
+  margin-left: 60px;
+  margin-bottom: 90px;
+}
+
+.accent-word {
+  font-weight: 700px;
+  font-size: 80px;
+  line-height: 1.1;
+}
+
+.hero-attention .text {
+  font-size: 15px;
+  line-height: 1.16;
+
+  margin-left: 82px;
+  margin-bottom: 16px;
+}
+
+/* icon-list */
+.icon-list {
+  display: flex;
+}
+.icon-list .item:not(:last-child) {
+  margin-right: 17px;
+}
+
+.hero-attention .icon-list {
+  margin-left: 82px;
+}
+
+.episodes {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.episodes .container {
+  position: relative;
+  justify-content: space-between;
+}
+
+.episodes-title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.24;
+  letter-spacing: 2.88px;
+}
+
+.episodes .button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 17px;
+  line-height: 1.59;
+
+  color: inherit;
+  background-color: var(--button-bg-color);
+  cursor: pointer;
+
+  border: 0px solid transparent;
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+/* about */
+.about {
+  margin-bottom: 260px;
+}
+.about .container {
+  display: flex;
+
+  background-color: #000000;
+  border-radius: 32px;
+  padding: 40px;
+}
+
+.about .container:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.about .aside {
+  margin-right: 53px;
+}
+
+.semi-button {
+  display: block;
+  font-size: 18px;
+
+  color: inherit;
+  background-color: #191919;
+
+  border-radius: 6px;
+  padding: 0 16px;
+  margin-bottom: 48px;
+  border: 0px;
+}
+
+.semi-title {
+  font-size: 17px;
+  line-height: 1.59;
+
+  color: var(--accent-color);
+
+  margin-bottom: 18px;
+}
+
+.desc {
+  width: 778px;
+}
+
+.desc .title {
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 1.1;
+  letter-spacing: 2.56px;
+
+  width: 700px;
+  margin-bottom: 28px;
+}
+
+.desc .text {
+  font-size: 22px;
+  color: var(--secondary-color);
+
+  margin-bottom: 18px;
+}
+
+.desc .button {
+  font-weight: 400;
+  font-size: 18px;
+
+  color: inherit;
+  background-color: var(--button-bg-color);
+
+  padding: 12px 15px;
+  border-radius: 6px;
+}
+
+/* about-podcaster */
+.container.position {
+  position: relative;
+}
+.about-podcaster {
+  padding-top: 147px;
+  padding-bottom: 147px;
+}
+
+.arrow {
+  width: 112px;
+  height: 112px;
+
+  background-color: var(--button-bg-color);
+
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-podcaster .suptitle {
+  font-weight: 400;
+  font-size: 18px;
+
+  color: var(--accent-color);
+}
+
+.about-podcaster .title {
+  font-weight: 400;
+  font-size: 65px;
+  line-height: 1.22;
+  letter-spacing: 2.88px;
+
+  margin-bottom: 28px;
+}
+
+.about-podcaster .text {
+  color: var(--secondary-color);
+  width: 556px;
+}
+
+.about-podcaster .text:not(:last-child) {
+  margin-bottom: 33px;
+}
+
+.img-podcaster {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  border-radius: 14px;
+}
+
+
+/* subscription */
+.subscribe .container {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+
+  border-radius: 32px;
+  margin-top: 200px;
+  padding: 60px;
+}
+
+.subscribe .text {
+  font-weight: 400;
+  font-size: 18px;
+
+  color: var(--accent-color);
+}
+
+.subscribe .desc .title {
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 1.1;
+  letter-spacing: 2.88px;
+
+  margin-bottom: 0;
+}
+
+.form .button {
+  font-size: 24px;
+  line-height: 1.2;
+
+  background-color: #191919;;
+  color: var(--secondary-color);
+
+  padding: 26px 410px 26px 20px;
+  border-radius: 6px;
+}
+
+.form .button:first-child {
+  margin-bottom: 20px;
+}
+
+/* benefits */
+.benefits{
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.benefits-list .item {
+  background-color: #000000;
+
+  width: calc((100% - 60px) / 3);
+  height: 321px;
+  border-radius: 32px;
+  padding: 54px 48px;
+  margin-right: 16px;
+  margin-bottom: 32px;
+}
+
+.benefits-list .item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.benefits-list .title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.2;
+
+  margin-top: 20px;
+  margin-bottom: 19px;
+}
+
+.benefits-list .text {
+  font-size: 23px;
+  line-height: 1.25;
+
+  color: var(--secondary-color);
+}
+
+/* footer */
+.footer .container {
+  display: flex;
+  background-color: #000000;
+  border-radius: 32px;
+
+  padding: 40px 60px;
+}
+
+.social {
+  width: 447px;
+  margin-right: 15px;
+}
+
+.social .social-list {
+  display: flex;
+  margin-top: 15px;
+}
+
+.social .social-list .item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.footer-nav {
+  width: 178px;
+  margin-right: 15px;
+}
+
+.footer-nav .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-nav .link {
+  font-size: 17px;
+  line-height: 1.59;
+}
+
+.copyright {
+  width: 178px;
+  margin-right: 15px;
+}
+
+.copyright .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.copyright .link {
+  font-size: 17px;
+  line-height: 1.59;
+}
